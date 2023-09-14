@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".CalculateActivity">
+
+    <EditText
+        android:id="@+id/startTextDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="start Time"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/endTextDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="end Time"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/CalculateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate" />
+
+    <Button
+        android:id="@+id/showGraphButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Graph"
+        android:layout_marginTop="16dp" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/resultRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/totalHoursTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>

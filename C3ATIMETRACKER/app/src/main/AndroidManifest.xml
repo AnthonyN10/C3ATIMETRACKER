@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.C3ATIMETRACKER"
+        tools:targetApi="31">
+        <activity
+            android:name=".MinmaxActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewcategoriesaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GraphActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CalculateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewtimesheetActivity"
+            android:exported="false" />
+        <activity
+            android:name=".minmax"
+            android:exported="false" />
+        <activity
+            android:name=".TimeMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StartLogActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ImageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SignupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StartLogActivity"
+            android:exported="false"
+            tools:ignore="DuplicateActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TrackerTimeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".logtime"
+            android:exported="false" />
+        <activity
+            android:name=".categories"
+            android:exported="false" />
+        <activity
+            android:name=".calender"
+            android:exported="false" />
+        <activity
+            android:name=".chat"
+            android:exported="false" />
+        <activity
+            android:name=".timesheet"
+            android:exported="false" />
+        <activity
+            android:name=".report"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:theme="@style/Theme.C3ATIMETRACKER.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

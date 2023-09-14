@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="16dp"
+    android:layout_marginTop="-140dp"
+    android:background="@color/Background"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CATEGORIES"
+        android:textStyle="bold"
+        android:layout_marginTop="-330dp"
+        android:textColor="@color/text"
+        android:textSize="32sp"
+        android:typeface="serif"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/categorynametxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleTextView"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/roundtext"
+        android:hint="Category name"
+        android:minHeight="48dp"
+        android:textColorHint="@color/Background"
+        android:textSize="20sp" />
+
+
+    <Button
+        android:id="@+id/addbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="-60dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/roundedbutton"
+        android:gravity="center"
+        android:text="ADD category"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+       />
+
+    <Button
+        android:id="@+id/viewbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/roundedbutton"
+        android:gravity="center"
+        android:text="view categories"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:cornerRadius="26dp" />
+
+</RelativeLayout>

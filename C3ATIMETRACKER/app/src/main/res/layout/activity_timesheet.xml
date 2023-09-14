@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DCDCE4"
+   >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="120dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="69dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="TIME SHEET ENTRY"
+        android:textAllCaps="true"
+        android:textColor="@color/text"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="70dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:contentDescription="Select the category"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.041"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/imagebtn"
+        android:layout_width="205dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="420dp"
+        android:layout_marginBottom="212dp"
+        android:background="@drawable/roundedbutton"
+        android:backgroundTint="#23396B"
+        android:contextClickable="false"
+        android:shadowColor="#DADAE2"
+        android:text="ADD PHOTO"
+        android:textColor="#FFF"
+        android:textColorHint="#DADAE2"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/createcattext"
+        android:layout_width="179dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/roundedbutton"
+        android:backgroundTint="#23396B"
+        android:contextClickable="false"
+        android:layout_marginTop="500dp"
+        android:textColor="#FFF"
+        android:text="CREATE CATEGORY"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/viewbtn"
+        android:layout_width="179dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="192dp"
+        android:layout_marginBottom="132dp"
+        android:background="@drawable/roundedbutton"
+        android:backgroundTint="#23396B"
+        android:contextClickable="false"
+        android:text="VIEW ENTRIES"
+        android:layout_marginTop="500dp"
+        android:textColor="#FFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/savebutton"
+        android:layout_width="248dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="90dp"
+        android:layout_marginLeft="81.5dp"
+        android:layout_marginTop="600dp"
+        android:layout_marginEnd="81.5dp"
+        android:layout_marginBottom="67dp"
+        android:background="@drawable/roundedbutton"
+        android:backgroundTint="#23396B"
+        android:contextClickable="false"
+        android:shadowColor="#DADAE2"
+        android:text="SAVE"
+        android:textColor="#FFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/roundtext"
+        android:ems="10"
+        android:hint="Date"
+        android:inputType="date"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/editstartTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="210dp"
+        android:background="@drawable/roundtext"
+        android:ems="10"
+        android:hint="Start Time"
+        android:inputType="time"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDate"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/endtimetxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="280dp"
+        android:background="@drawable/roundtext"
+        android:ems="10"
+        android:hint="End Time"
+        android:inputType="time"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDate"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/descrText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="350dp"
+        android:background="@drawable/roundtext"
+        android:ems="10"
+        android:hint="Description"
+        android:inputType="text"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDate"
+        tools:ignore="TouchTargetSizeCheck" />
+
+
+
+</RelativeLayout>

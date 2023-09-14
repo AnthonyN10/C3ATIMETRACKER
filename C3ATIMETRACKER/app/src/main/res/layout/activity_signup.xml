@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Background">
+
+
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="SIGN UP"
+        android:textAllCaps="true"
+        android:textColor="@color/text"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:textSize="30sp"
+        />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/roundtext"
+        android:hint="NAME"
+        android:minHeight="48dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#ffffff"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText2"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/roundtext"
+        android:hint="SURNAME"
+        android:minHeight="48dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#ffffff"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/signupUsernameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText2"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="95dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/roundtext"
+        android:hint="EMAIL"
+        android:minHeight="48dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#ffffff"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/signupPasswordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText2"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/roundtext"
+        android:hint="PASSWORD"
+        android:minHeight="48dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#ffffff"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/signupButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundedbutton"
+        android:text="@string/sign_up"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColorHint="@color/Background"
+        android:layout_marginTop="440dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:textColor="#FFFFFF"
+        />
+
+    <TextView
+        android:id="@+id/or"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="500dp"
+        android:gravity="center"
+        android:text="or"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        />
+
+
+    <Button
+        android:id="@+id/signupwithgoogle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="540dp"
+        android:layout_marginEnd="50dp"
+        android:textStyle="bold"
+        android:background="@drawable/forgooglebutton"
+        android:text="SIGN UP WITH GOOGLE"
+        android:textColor="@color/text"
+        android:textSize="15sp"
+   />
+
+
+
+</RelativeLayout>
